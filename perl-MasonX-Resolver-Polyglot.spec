@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MasonX
 %define	pnam	Resolver-Polyglot
-Summary:	MasonX::Resolver::Polyglot - Component path resolver for easy internationalization
-#Summary(pl):	
+Summary:	MasonX::Resolver::Polyglot - component path resolver for easy internationalization
+Summary(pl):	MasonX::Resolver::Polyglot - resolver ¶cie¿ek komponentów do ³atwego umiêdzynaradawiania
 Name:		perl-MasonX-Resolver-Polyglot
 Version:	0.6
 Release:	1
@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4fa1763b2bd6bafb8536b762c45e29cf
-BuildRequires:	perl-devel >= 1:5.8
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-HTML-Mason >= 1.1
@@ -27,11 +27,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This HTML::Mason::Resolver::File::ApacheHandler subclass enables Mason
-to determine the client's language preference and find the best matching
-component to fulfill it.
+to determine the client's language preference and find the best
+matching component to fulfill it.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ta podklasa HTML::Mason::Resolver::File::ApacheHandler umo¿liwia
+Masonowi okre¶lanie preferowanego przez klienta jêzyka i odnajdywania
+najlepszego pasuj±cego komponentu, aby sprostaæ preferencjom.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -55,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}/*/*.pm
+%{perl_vendorlib}/MasonX/*/*.pm
 %{_mandir}/man3/*
