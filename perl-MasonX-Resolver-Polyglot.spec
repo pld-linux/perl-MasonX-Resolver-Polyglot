@@ -8,13 +8,13 @@
 Summary:	MasonX::Resolver::Polyglot - component path resolver for easy internationalization
 Summary(pl):	MasonX::Resolver::Polyglot - resolver ¶cie¿ek komponentów do ³atwego umiêdzynaradawiania
 Name:		perl-MasonX-Resolver-Polyglot
-Version:	0.6
+Version:	0.7
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4fa1763b2bd6bafb8536b762c45e29cf
+# Source0-md5:	938ed09d946569a1adbcd55a6031d921
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -37,7 +37,7 @@ Masonowi okre¶lanie preferowanego przez klienta jêzyka i odnajdywania
 najlepszego pasuj±cego komponentu, aby sprostaæ preferencjom.
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-%{version}
+%setup -q -n %{pdir}-%{pnam}
 
 %build
 %{__perl} Makefile.PL \
