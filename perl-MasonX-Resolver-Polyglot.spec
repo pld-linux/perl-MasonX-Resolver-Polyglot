@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Resolver-Polyglot
+%define		pdir	MasonX
+%define		pnam	Resolver-Polyglot
 Summary:	MasonX::Resolver::Polyglot - component path resolver for easy internationalization
 Summary(pl):	MasonX::Resolver::Polyglot - resolver ¶cie¿ek komponentów do ³atwego umiêdzynaradawiania
 Name:		perl-MasonX-Resolver-Polyglot
