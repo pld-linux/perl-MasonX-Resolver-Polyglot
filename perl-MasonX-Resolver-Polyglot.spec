@@ -19,8 +19,9 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-HTML-Mason >= 1.1
-BuildRequires:	perl-Locale-Country >= 2.06
-BuildRequires:	perl-Locale-Language >= 2.02
+BuildRequires:	perl-Locale-Codes
+BuildRequires:	perl(Locale::Country) >= 2.06
+BuildRequires:	perl(Locale::Language) >= 2.02
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
