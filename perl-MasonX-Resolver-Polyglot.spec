@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Resolver-Polyglot
 Summary:	MasonX::Resolver::Polyglot - component path resolver for easy internationalization
-Summary(pl):	MasonX::Resolver::Polyglot - resolver ¶cie¿ek komponentów do ³atwego umiêdzynaradawiania
+Summary(pl.UTF-8):   MasonX::Resolver::Polyglot - resolver Å›cieÅ¼ek komponentÃ³w do Å‚atwego umiÄ™dzynaradawiania
 Name:		perl-MasonX-Resolver-Polyglot
 Version:	0.7
 Release:	1
@@ -31,10 +31,10 @@ This HTML::Mason::Resolver::File::ApacheHandler subclass enables Mason
 to determine the client's language preference and find the best
 matching component to fulfill it.
 
-%description -l pl
-Ta podklasa HTML::Mason::Resolver::File::ApacheHandler umo¿liwia
-Masonowi okre¶lanie preferowanego przez klienta jêzyka i odnajdywania
-najlepszego pasuj±cego komponentu, aby sprostaæ preferencjom.
+%description -l pl.UTF-8
+Ta podklasa HTML::Mason::Resolver::File::ApacheHandler umoÅ¼liwia
+Masonowi okreÅ›lanie preferowanego przez klienta jÄ™zyka i odnajdywania
+najlepszego pasujÄ…cego komponentu, aby sprostaÄ‡ preferencjom.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}
