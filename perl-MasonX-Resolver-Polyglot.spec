@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	MasonX
 %define		pnam	Resolver-Polyglot
+%include	/usr/lib/rpm/macros.perl
 Summary:	MasonX::Resolver::Polyglot - component path resolver for easy internationalization
 Summary(pl.UTF-8):	MasonX::Resolver::Polyglot - resolver ścieżek komponentów do łatwego umiędzynaradawiania
 Name:		perl-MasonX-Resolver-Polyglot
@@ -15,13 +15,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	938ed09d946569a1adbcd55a6031d921
+URL:		http://search.cpan.org/dist/MasonX-Resolver-Polyglot/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-HTML-Mason >= 1.1
-BuildRequires:	perl-Locale-Codes
 BuildRequires:	perl(Locale::Country) >= 2.06
 BuildRequires:	perl(Locale::Language) >= 2.02
+BuildRequires:	perl-HTML-Mason >= 1.1
+BuildRequires:	perl-Locale-Codes
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
