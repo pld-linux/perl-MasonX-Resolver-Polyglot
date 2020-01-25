@@ -4,7 +4,6 @@
 
 %define		pdir	MasonX
 %define		pnam	Resolver-Polyglot
-%include	/usr/lib/rpm/macros.perl
 Summary:	MasonX::Resolver::Polyglot - component path resolver for easy internationalization
 Summary(pl.UTF-8):	MasonX::Resolver::Polyglot - resolver ścieżek komponentów do łatwego umiędzynaradawiania
 Name:		perl-MasonX-Resolver-Polyglot
